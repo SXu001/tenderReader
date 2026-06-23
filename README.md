@@ -55,7 +55,7 @@ Run the following command to install all the necessary dependencies for document
 ```bash
 pip install pdfplumber python-docx pandas tabulate ollama openai python-dotenv pyyaml
 ```
-### Environment Configuration
+### 3. Environment Configuration
 Create a file named reader.env in the root directory of the project and add the following lines:
 
 ```bash
