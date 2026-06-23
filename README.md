@@ -43,6 +43,29 @@ The tool outputs a structured JSON file containing the following fields. Any mis
 
 ---
 
+## Installation & Setup
+
+### 1. Prerequisites
+* Ensure you have **Python 3.8+** installed on your system. 
+* You will also need a local installation of [Ollama](https://ollama.com/) running the `qwen2.5:7b` model.
+
+### 2. Install Required Libraries
+Run the following command to install all the necessary dependencies for document parsing, data manipulation, and LLM orchestration:
+
+```bash
+pip install pdfplumber python-docx pandas tabulate ollama openai python-dotenv pyyaml
+```
+### Environment Configuration
+Create a file named reader.env in the root directory of the project and add the following lines:
+
+```bash
+DEEPSEEK_API_KEY=your_actual_deepseek_api_key_here
+OLLAMA_HOST=http://localhost:11434
+DEEPSEEK_BASE_URL=[https://api.deepseek.com](https://api.deepseek.com)
+```
+
+---
+
 ## Roadmap
 
 *   **v0.5:** Generate human-friendly markdown/text reports alongside the raw JSON output.
